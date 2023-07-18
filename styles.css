@@ -63,29 +63,29 @@ main {
 }
 .contact-box {
   background-color: #603f29;
-  border: 2px solid #f7d46b; 
-  padding: 30px; 
-  max-width: 220px;
-  margin: 0 auto; 
+  border: 2px solid #f7d46b;
+  padding: 30px;
+  width: 600px; /* Adjust the width as needed */
+  margin: 0 auto;
   background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0px, rgba(255, 255, 255, 0.1) 4px, transparent 4px, transparent 8px);
 }
+
 .contact-form {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 80vh; /* Adjust the height as needed */
+  height: auto; /* Change the height to 'auto' to allow it to expand with the content */
 }
 .top-left-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #603f29; /* darker walnut brown */
   border: 2px solid #f7d46b; /* increased border size for brass */
   padding: 20px;
-  background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0px, rgba(255, 255, 255, 0.1) 4px, transparent 4px, transparent 8px);
-  position: absolute;
-  top: 200px; /* Adjust the top position as needed */
-  left: 40px; /* Adjust the left position as needed */
   width: 600px; /* Adjust the width as needed */
   height: 300px; /* Adjust the height as needed */
-  z-index: -1; /* Push the box to the background */
+  background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0px, rgba(255, 255, 255, 0.1) 4px, transparent 4px, transparent 8px);
 }
 
 .top-right-box {
@@ -104,9 +104,22 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  margin-left: 20px; /* Add some space between the resume and download link */
 }
 
+.download-link {
+  display: inline-block;
+  background-color: #603f29;
+  color: #c1bfb2; /* Earth tone color for better contrast */
+  border: 2px solid #f7d46b; /* increased border size for brass */
+  padding: 10px 20px;
+  text-decoration: none;
+  z-index: 1; /* Set z-index to 1 to ensure it's clickable over the background */
+}
+.download-link:hover {
+  background-color: #9ccca8; /* sage green */
+  color: #603f29; /* darker walnut brown */
+}
 .download-box a {
   display: inline-block;
   background-color: #603f29;
