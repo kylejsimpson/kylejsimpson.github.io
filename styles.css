@@ -1,0 +1,123 @@
+/* styles.css */
+
+body {
+  text-align: center;
+  background-color: #9ccca8; /* sage green */
+  font-family: 'Roboto', sans-serif; /* Recommended font */
+}
+
+header {
+  background-color: #603f29; /* darker walnut brown */
+  border: 2px solid #f7d46b; /* increased border size for brass */
+  padding: 20px;
+  background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0px, rgba(255, 255, 255, 0.1) 4px, transparent 4px, transparent 8px);
+  color: #c1bfb2; /* Earth tone color for better contrast */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #c1bfb2; /* Earth tone color for better contrast */
+  padding: 5px;
+}
+
+nav ul li a:visited {
+  color: #a09e92; /* Lighter color for visited links */
+}
+
+main {
+  padding: 20px;
+}
+
+.image-box {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+  
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+.contact-box {
+  background-color: #603f29;
+  border: 2px solid #f7d46b; 
+  padding: 30px; 
+  max-width: 220px;
+  margin: 0 auto; 
+  background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0px, rgba(255, 255, 255, 0.1) 4px, transparent 4px, transparent 8px);
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 80vh; /* Adjust the height as needed */
+}
+.top-left-box {
+  background-color: #603f29; /* darker walnut brown */
+  border: 2px solid #f7d46b; /* increased border size for brass */
+  padding: 20px;
+  background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0px, rgba(255, 255, 255, 0.1) 4px, transparent 4px, transparent 8px);
+  position: absolute;
+  top: 200px; /* Adjust the top position as needed */
+  left: 40px; /* Adjust the left position as needed */
+  width: 600px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  z-index: -1; /* Push the box to the background */
+}
+
+.top-right-box {
+  background-color: #603f29; /* darker walnut brown */
+  border: 2px solid #f7d46b; /* increased border size for brass */
+  padding: 20px;
+  background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0px, rgba(255, 255, 255, 0.1) 4px, transparent 4px, transparent 8px);
+  position: absolute;
+  top: 200px; /* Adjust the top position as needed */
+  right: 40px; /* Adjust the right position as needed */
+  width: 600px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  z-index: -1; /* Push the box to the background */
+}
+.download-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.download-box a {
+  display: inline-block;
+  background-color: #603f29;
+  color: #c1bfb2; /* Earth tone color for better contrast */
+  border: 2px solid #f7d46b; /* increased border size for brass */
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.download-box a:hover {
+  background-color: #9ccca8; /* sage green */
+  color: #603f29; /* darker walnut brown */
+}
+
